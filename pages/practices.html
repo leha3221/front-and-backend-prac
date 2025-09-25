@@ -1,45 +1,51 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Семестровая работа - Практики</title>
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
-    <div id="header">
-        <h1>Практические занятия</h1>
-    </div>
-    
-    <div id="menu">
-        <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="practices.html">Практики</a></li>
-            <li><a href="goods.html">Товары</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-    </div>
-    
-    <div id="content">
-        <h2>Список практических занятий</h2>
-        <div class="practice">
-            <h3>Практика 1: Основы HTML</h3>
-            <p>Знакомство с базовой структурой HTML-документа.</p>
+    <div class="page-container">
+        <div class="header">
+            <h1>Практические занятия</h1>
         </div>
         
-        <div class="practice">
-            <h3>Практика 2: Работа с CSS</h3>
-            <p>Изучение основ каскадных таблиц стилей.</p>
+        <div class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
         </div>
         
-        <div class="practice">
-            <h3>Практика 3: JavaScript основы</h3>
-            <p>Введение в программирование на JavaScript.</p>
+        <div class="content">
+            <h2 class="section-title">Список практических занятий</h2>
+            
+            <div class="practices-container">
+                <div class="practice-card">
+                    <h3 class="practice-title">Практика 1: Основы HTML</h3>
+                    <p class="practice-desc">Знакомство с базовой структурой HTML-документа. Изучение основных тегов и атрибутов.</p>
+                </div>
+                
+                <div class="practice-card">
+                    <h3 class="practice-title">Практика 2: Работа с CSS</h3>
+                    <p class="practice-desc">Изучение основ каскадных таблиц стилей. Селекторы, свойства, позиционирование элементов.</p>
+                </div>
+                
+                <div class="practice-card">
+                    <h3 class="practice-title">Практика 3: JavaScript основы</h3>
+                    <p class="practice-desc">Введение в программирование на JavaScript. Переменные, функции, обработка событий.</p>
+                </div>
+            </div>
         </div>
-    </div>
-    
-    <div id="footer">
-        <p>&copy; 2025 Семестровая работа. Все права защищены.</p>
+        
+        <div class="footer">
+            <p>&copy; 2025 Семестровая работа. Все права защищены.</p>
+        </div>
     </div>
 </body>
 </html>

@@ -1,47 +1,54 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Семестровая работа - Новости</title>
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
-    <div id="header">
-        <h1>Новости</h1>
-    </div>
-    
-    <div id="menu">
-        <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="practices.html">Практики</a></li>
-            <li><a href="goods.html">Товары</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-    </div>
-    
-    <div id="content">
-        <div class="news-item">
-            <h2>Новость 1</h2>
-            <p><small>01.01.2025 12:00 А.Д.Маслов</small></p>
-            <p>Текст новости 1. Это Оксимирон из лондона специально для оптик раша </p>
+    <div class="page-container">
+        <div class="header">
+            <h1>Новости</h1>
         </div>
         
-        <div class="news-item">
-            <h2>Новость 2</h2>
-            <p><small>02.01.2025 14:30 А.Д.Маслов</small></p>
-            <p>Текст новости 2.Город под подошвой</p>
+        <div class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
         </div>
         
-        <div class="news-item">
-            <h2>Новость 3</h2>
-            <p><small>03.01.2025 10:15 A.Д.Маслов</small></p>
-            <p>Текст новости 3.Там где нас нет горит невиданный рассвет</p>
+        <div class="content">
+            <h2 class="section-title">Последние новости</h2>
+            
+            <div class="news-container">
+                <div class="news-item">
+                    <h2>Оксимирон из Лондона</h2>
+                    <p class="news-date">01.01.2025 12:00 А.Д. Маслов</p>
+                    <p>Это Оксимирон из Лондона специально для Optic Russia. </p>
+                </div>
+                
+                <div class="news-item">
+                    <h2>Город под подошвой</h2>
+                    <p class="news-date">02.01.2025 14:30 А.Д. Маслов</p>
+                    <p>Город под подошвой.</p>
+                </div>
+                
+                <div class="news-item">
+                    <h2>Там где нас нет</h2>
+                    <p class="news-date">03.01.2025 10:15 А.Д. Маслов</p>
+                    <p>Там где нас нет горит невиданный рассвет.</p>
+                </div>
+            </div>
         </div>
-    </div>
-    
-    <div id="footer">
-        <p>&copy; 2025 Семестровая работа. Все права защищены.</p>
+        
+        <div class="footer">
+            <p>&copy; 2025 Семестровая работа. Все права защищены.</p>
+        </div>
     </div>
 </body>
 </html>
