@@ -67,7 +67,16 @@ body {
     margin: 0 auto;
 }
 
-/* ==== ГЛАВНАЯ СТРАНИЦА ==== */
+/* ==== ОБЩИЕ СТИЛИ ДЛЯ ВСЕХ СТРАНИЦ ==== */
+.section-title {
+    font-size: 28px;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* ==== ГЛАВНАЯ СТРАНИЦА (index.html) ==== */
 .profile-header {
     text-align: center;
     margin-bottom: 40px;
@@ -143,14 +152,6 @@ body {
     margin-top: 50px;
 }
 
-.section-title {
-    font-size: 28px;
-    color: #2c3e50;
-    text-align: center;
-    margin-bottom: 30px;
-    font-weight: 300;
-}
-
 .experience-card {
     background: white;
     padding: 25px;
@@ -178,63 +179,144 @@ body {
     margin: 0;
 }
 
-/* ==== СТИЛИ ДЛЯ ТОВАРОВ ==== */
+/* ==== СТРАНИЦА НОВОСТЕЙ (news.html) ==== */
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.news-item {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border-left: 4px solid #e74c3c;
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateX(5px);
+}
+
+.news-item h2 {
+    color: #2c3e50;
+    margin: 0 0 10px 0;
+    font-size: 22px;
+}
+
+.news-date {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin: 0 0 15px 0;
+}
+
+.news-item p:last-child {
+    color: #34495e;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ==== СТРАНИЦА ТОВАРОВ (goods.html) ==== */
 .products-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    margin: 40px 0;
+    margin-top: 30px;
 }
 
 .product-card {
     background: white;
-    border-radius: 15px;
-    padding: 25px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    border: 1px solid #e9ecef;
+    transition: transform 0.3s ease;
+    border: 1px solid #ecf0f1;
 }
 
 .product-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .product-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
+    border-radius: 8px;
     margin-bottom: 15px;
-    border: 3px solid #667eea;
 }
 
 .product-title {
-    font-size: 20px;
+    font-size: 18px;
     color: #2c3e50;
     margin: 10px 0;
     font-weight: 600;
 }
 
 .product-price {
-    font-size: 18px;
     color: #e74c3c;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
 }
 
-/* ==== СТИЛИ ДЛЯ ПРАКТИК ==== */
+/* ==== СТРАНИЦА КОНТАКТОВ (contacts.html) ==== */
+.contact-info {
+    text-align: center;
+}
+
+.contact-details {
+    margin: 30px 0;
+}
+
+.contact-item {
+    margin: 20px 0;
+}
+
+.contact-item h3 {
+    color: #2c3e50;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.contact-item p {
+    color: #34495e;
+    font-size: 16px;
+    margin: 0;
+}
+
+.contact-button {
+    background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+}
+
+.contact-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+}
+
+/* ==== СТРАНИЦА ПРАКТИК (practices.html) ==== */
 .practices-container {
-    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .practice-card {
     background: white;
     padding: 25px;
-    margin: 20px 0;
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #f39c12;
     transition: transform 0.3s ease;
 }
 
@@ -243,7 +325,7 @@ body {
 }
 
 .practice-title {
-    font-size: 22px;
+    font-size: 20px;
     color: #2c3e50;
     margin: 0 0 10px 0;
     font-weight: 600;
@@ -255,94 +337,6 @@ body {
     margin: 0;
 }
 
-/* ==== СТИЛИ ДЛЯ НОВОСТЕЙ ==== */
-.news-container {
-    margin: 40px 0;
-}
-
-.news-item {
-    background: white;
-    padding: 30px;
-    margin: 25px 0;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    border-left: 4px solid #667eea;
-    transition: transform 0.3s ease;
-}
-
-.news-item:hover {
-    transform: translateX(5px);
-}
-
-.news-item h2 {
-    font-size: 24px;
-    color: #2c3e50;
-    margin: 0 0 10px 0;
-    font-weight: 600;
-}
-
-.news-date {
-    color: #7f8c8d;
-    font-size: 14px;
-    margin: 0 0 15px 0;
-    font-style: italic;
-}
-
-.news-item p:last-child {
-    color: #5a6c7d;
-    line-height: 1.6;
-    margin: 0;
-}
-
-/* ==== СТИЛИ ДЛЯ КОНТАКТОВ ==== */
-.contact-info {
-    text-align: center;
-    margin: 40px 0;
-}
-
-.contact-details {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    padding: 30px;
-    border-radius: 15px;
-    margin: 30px 0;
-    border-left: 5px solid #667eea;
-}
-
-.contact-item {
-    margin: 20px 0;
-}
-
-.contact-item h3 {
-    font-size: 18px;
-    color: #2c3e50;
-    margin: 0 0 10px 0;
-    font-weight: 600;
-}
-
-.contact-item p {
-    font-size: 16px;
-    color: #5a6c7d;
-    margin: 0;
-}
-
-.contact-button {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    color: white;
-    border: none;
-    padding: 15px 40px;
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 20px;
-}
-
-.contact-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4);
-}
-
 /* ==== ФУТЕР ==== */
 .footer {
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
@@ -350,4 +344,30 @@ body {
     text-align: center;
     padding: 30px;
     margin-top: 50px;
+}
+
+/* ==== АДАПТИВНОСТЬ ==== */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .content {
+        padding: 20px;
+    }
+    
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .products-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile-photo {
+        width: 180px;
+        height: 230px;
+    }
 }
