@@ -196,39 +196,34 @@ main.content {
     gap: 25px;
 }
 
-.news-item {
+.news-card {
     background: white;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    border-left: 4px solid #e74c3c;
-    transition: transform 0.3s ease;
+    border-left: 4px solid #667eea;
 }
 
-.news-item:hover {
-    transform: translateX(5px);
-}
-
-.news-item h2 {
+.news-title {
     font-size: 24px;
     color: #2c3e50;
     margin: 0 0 10px 0;
     font-weight: 600;
 }
 
-.news-date {
+.news-meta {
     color: #95a5a6;
     font-size: 14px;
     margin: 0 0 15px 0;
 }
 
-.news-item p:last-child {
+.news-text {
     color: #34495e;
     line-height: 1.7;
     margin: 0;
 }
 
-.products-container {
+.products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
@@ -242,7 +237,6 @@ main.content {
     text-align: center;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     transition: transform 0.3s ease;
-    border: 1px solid #ecf0f1;
 }
 
 .product-card:hover {
@@ -258,7 +252,7 @@ main.content {
     border: 3px solid #f8f9fa;
 }
 
-.product-title {
+.product-name {
     font-size: 18px;
     color: #2c3e50;
     margin: 10px 0;
@@ -272,33 +266,17 @@ main.content {
     margin: 5px 0;
 }
 
-.contact-info {
+.contacts-container {
     text-align: center;
 }
 
-.contact-details {
+.contact-info {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     padding: 25px;
     margin: 20px 0;
     border-radius: 15px;
     font-size: 18px;
     color: #2c3e50;
-}
-
-.contact-item {
-    margin: 20px 0;
-}
-
-.contact-item h3 {
-    color: #2c3e50;
-    margin: 0 0 10px 0;
-    font-size: 18px;
-}
-
-.contact-item p {
-    color: #34495e;
-    font-size: 16px;
-    margin: 0;
 }
 
 .contact-button {
@@ -317,37 +295,6 @@ main.content {
 .contact-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
-}
-
-.practices-container {
-    display: grid;
-    gap: 25px;
-}
-
-.practice-card {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    border-left: 4px solid #f39c12;
-    transition: transform 0.3s ease;
-}
-
-.practice-card:hover {
-    transform: translateX(5px);
-}
-
-.practice-title {
-    font-size: 20px;
-    color: #2c3e50;
-    margin: 0 0 10px 0;
-    font-weight: 600;
-}
-
-.practice-desc {
-    color: #7f8c8d;
-    line-height: 1.6;
-    margin: 0;
 }
 
 .footer {
@@ -373,11 +320,7 @@ main.content {
         grid-template-columns: 1fr;
     }
     
-    .products-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .practices-container {
+    .products-grid {
         grid-template-columns: 1fr;
     }
     
