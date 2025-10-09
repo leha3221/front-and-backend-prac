@@ -116,47 +116,43 @@ body {
     grid-area: nav;
 }
 
-.nav__list {
+.nav-list {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: var(--space-md);
+    gap: 25px;
 }
 
-.nav__item {
+.nav-item {
     margin: 0;
 }
 
-.nav__link {
+.nav-link {
     color: var(--color-text-inverse);
     text-decoration: none;
-    padding: var(--space-sm) var(--space-md);
+    padding: 12px 25px;
     border-radius: 25px;
-    transition: var(--transition);
+    transition: all 0.3s ease;
     font-weight: 500;
 }
 
-.nav__link:hover {
+.nav-link:hover {
     background: rgba(255,255,255,0.1);
     transform: translateY(-2px);
 }
 
-.nav__item--active .nav__link {
+.nav-item--active .nav-link {
     background: var(--color-primary);
     font-weight: 600;
 }
-
-/* ==== БЛОК: MAIN ==== */
 main.content {
     padding: var(--space-xl);
     max-width: 900px;
     margin: 0 auto;
     grid-area: main;
 }
-
-/* ==== БЛОК: PROFILE ==== */
 .profile-header {
     text-align: center;
     margin-bottom: var(--space-xl);
@@ -196,8 +192,6 @@ main.content {
     color: var(--color-text-light);
     margin: var(--space-xs) 0;
 }
-
-/* ==== БЛОК: ABOUT ==== */
 .about-me {
     background: linear-gradient(135deg, var(--color-bg-secondary) 0%, var(--color-border) 100%);
     padding: var(--space-lg);
@@ -219,8 +213,6 @@ main.content {
     font-weight: 500;
     font-size: var(--font-size-lg);
 }
-
-/* ==== БЛОК: SKILLS ==== */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -264,8 +256,6 @@ main.content {
     cursor: not-allowed;
     transform: none !important;
 }
-
-/* ==== БЛОК: EXPERIENCE ==== */
 .experience-section {
     margin-top: var(--space-xxl);
 }
@@ -316,8 +306,6 @@ main.content {
     line-height: 1.6;
     margin: 0;
 }
-
-/* ==== БЛОК: NEWS ==== */
 .news-container {
     display: grid;
     gap: var(--space-lg);
@@ -360,8 +348,6 @@ main.content {
     line-height: 1.7;
     margin: 0;
 }
-
-/* ==== БЛОК: PRACTICES ==== */
 .practices-container {
     display: grid;
     gap: var(--space-md);
@@ -399,8 +385,6 @@ main.content {
     line-height: 1.6;
     margin: 0;
 }
-
-/* ==== БЛОК: PRODUCTS ==== */
 .products-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -484,8 +468,6 @@ main.content {
     text-decoration: line-through;
     margin-right: var(--space-xs);
 }
-
-/* ==== БЛОК: CONTACTS ==== */
 .contact-info {
     text-align: center;
 }
