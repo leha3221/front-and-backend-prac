@@ -7,63 +7,112 @@
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-    <div class="page-container">
+    <div class="page">
         <header class="header">
-            <h1>Хэдэр</h1>
+            <h1 class="header__title">Хэдэр</h1>
         </header>
+        
         <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="pages/practices.html">Практики</a></li>
-                <li class="nav-item"><a class="nav-link" href="pages/goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
+            <ul class="nav__list">
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/practices.html">Практики</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/goods.html">Товары</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/contacts.html">Контакты</a>
+                </li>
             </ul>
         </nav>
-        <main class="content">
-            <article class="profile-header">
-                <h1 class="profile-title">Информация об авторе</h1>
-                <img class="profile-photo" src="images/photo.jpg" alt="Фото автора">
-                <h2 class="profile-name">Маслов Алексей Дмитриевич</h2>
-                <p class="profile-group">ЭФБО-07-24</p>
-            </article>
-            <section class="about-me">
-                <h2>Обо мне</h2>
-                <p>Обо мне: Год назад я сидел на скамейке в общественном парке 
-                    На углу Beckton и Barking
-                    Думал, как из Англии выйти пешкою в дамки 
-                    К верху иерархии — я себе всё это накаркал</p>
-            </section>
-            <section class="skills-container">
-                <h2>Мои навыки</h2>
-                <div class="skills-grid">
-                    <div class="skill-tag">Реп</div>
-                    <div class="skill-tag">Биты</div>
-                    <div class="skill-tag">Продюсирование</div>
-                    <div class="skill-tag">Домодедово саундклауд</div>
+
+        <!-- Theme Switcher -->
+        <div class="theme-switcher">
+            <button class="theme-switcher__button" onclick="toggleTheme()">🌓</button>
+        </div>
+        
+        <main class="main">
+            <section class="profile">
+                <div class="profile__card">
+                    <img class="profile__photo" src="images/photo.jpg" alt="Фото автора">
+                    <div class="profile__info">
+                        <h2 class="profile__name">Маслов Алексей Дмитриевич</h2>
+                        <p class="profile__group">ЭФБО-07-24</p>
+                    </div>
                 </div>
             </section>
-            <section class="experience-section">
-                <h2 class="section-title">Мой опыт работы</h2>
-                <div class="experience-grid">
+
+            <section class="about">
+                <h2 class="about__title">Обо мне</h2>
+                <div class="about__content">
+                    <p class="about__text">
+                        Обо мне: Год назад я сидел на скамейке в общественном парке 
+                        На углу Beckton и Barking. Думал, как из Англии выйти пешкою в дамки 
+                        К верху иерархии — я себе всё это накаркал.
+                    </p>
+                </div>
+            </section>
+
+            <section class="skills">
+                <h2 class="skills__title">Мои навыки</h2>
+                <div class="skills__list">
+                    <div class="skill skill--rep">
+                        <span class="skill__name">Реп</span>
+                    </div>
+                    <div class="skill skill--beats">
+                        <span class="skill__name">Биты</span>
+                    </div>
+                    <div class="skill skill--production">
+                        <span class="skill__name">Продюсирование</span>
+                    </div>
+                    <div class="skill skill--soundcloud">
+                        <span class="skill__name">Домодедово саундклауд</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="experience">
+                <h2 class="experience__title">Мой опыт работы</h2>
+                <div class="experience__grid">
                     <article class="experience-card">
-                        <h3 class="experience-title">Реп</h3>
-                        <p class="experience-desc">Работал в репе поднимал домодедовский ск с колен</p>
+                        <h3 class="experience-card__title">Реп</h3>
+                        <p class="experience-card__desc">Работал в репе поднимал домодедовский ск с колен</p>
+                    </article>
+                    <article class="experience-card experience-card--featured">
+                        <h3 class="experience-card__title">Битмейкинг</h3>
+                        <p class="experience-card__desc">Работал в битах подниал домодедовский ск с колен</p>
                     </article>
                     <article class="experience-card">
-                        <h3 class="experience-title">Битмейкинг</h3>
-                        <p class="experience-desc">Работал в битах подниал домодедовский ск с колен</p>
-                    </article>
-                    <article class="experience-card">
-                        <h3 class="experience-title">Продюсирование</h3>
-                        <p class="experience-desc">Работал продюсирование поднимал домодедовский ск с колен</p>
+                        <h3 class="experience-card__title">Продюсирование</h3>
+                        <p class="experience-card__desc">Работал продюсирование поднимал домодедовский ск с колен</p>
                     </article>
                 </div>
             </section>
         </main>
+        
         <footer class="footer">
-            <p>&copy; Футер</p>
+            <p class="footer__text">&copy; Футер</p>
         </footer>
     </div>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        });
+    </script>
 </body>
 </html>
