@@ -108,7 +108,6 @@ body {
     letter-spacing: 2px;
     grid-area: header;
 }
-
 /* ==== БЛОК: NAV ==== */
 .nav {
     background: #2c3e50;
@@ -141,11 +140,6 @@ body {
 .nav-link:hover {
     background: rgba(255,255,255,0.1);
     transform: translateY(-2px);
-}
-
-.nav-item--active .nav-link {
-    background: #667eea;
-    font-weight: 600;
 }
 main.content {
     padding: var(--space-xl);
