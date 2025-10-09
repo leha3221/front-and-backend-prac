@@ -190,6 +190,8 @@ main.content {
     line-height: 1.6;
     margin: 0;
 }
+
+/* ==== СТИЛИ ДЛЯ НОВОСТЕЙ ==== */
 .news-container {
     display: grid;
     gap: 25px;
@@ -226,6 +228,8 @@ main.content {
     line-height: 1.7;
     margin: 0;
 }
+
+/* ==== СТИЛИ ДЛЯ ПРАКТИК ==== */
 .practices-container {
     display: grid;
     gap: 20px;
@@ -256,6 +260,8 @@ main.content {
     line-height: 1.6;
     margin: 0;
 }
+
+/* ==== СТИЛИ ДЛЯ ТОВАРОВ ==== */
 .products-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -298,6 +304,12 @@ main.content {
     font-weight: 700;
     margin: 5px 0;
 }
+
+/* ==== СТИЛИ ДЛЯ КОНТАКТОВ ==== */
+.contact-info {
+    text-align: center;
+}
+
 .contact-details {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
