@@ -108,7 +108,6 @@ body {
     letter-spacing: 2px;
     grid-area: header;
 }
-/* ==== БЛОК: NAV ==== */
 .nav {
     background: #2c3e50;
     padding: 20px 0;
